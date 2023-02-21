@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: #333;
+}
+
+.main {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../img/wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content {
+  max-width: 400px;
+  min-width: 300;
+}
+
+.relogio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 7px 1px 10px 0.3px rgba(0,0,0,0.2);
+}
+
+.relogio-content {
+  font-size: 5rem;
+  padding: 2rem;
+}
+
+.relogio {
+  font-family: "Roboto Mono", monospace;
+}
+
+.pausado {
+  color: rgb(255, 75, 75);
+}
+
+.head h1 {
+  font-size: 4rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.buttons {
+  padding: 1rem;
+}
+
+.buttons .button {
+  background-color: #0099ff;
+  color: #FFF;
+  margin: 1rem;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+  font-family: "Roboto Mono", monospace;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: ease-in 0.375s;
+}
+
+.buttons .button:hover {
+  background-color: #005f9f;
+}
+
+@media (max-width: 450px) {
+  
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .relogio-container {
+    width: auto;
+  }
+}
